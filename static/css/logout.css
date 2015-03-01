@@ -1,0 +1,19 @@
+*{
+    margin: 0px;
+    padding: 0px;
+   background-color: yellowgreen;
+}
+#body {
+   background-color: yellowgreen;
+}
+#head{
+    width: 10%;
+    height: 30px;
+    margin-top: 300px;
+    margin-left: 40%;
+    background-color: aqua;
+}
+#font{
+    background-color: red;
+    font-family: Verdana, Arial, helvetica, sans-serif;
+}

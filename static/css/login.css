@@ -1,0 +1,116 @@
+* {
+    margin: 0px;
+    padding: 0px;
+
+}
+#body{
+   /*  background-color: aqua;*/
+}
+#head{
+    width: 100%;
+    height: 50px;
+    background-color: red;
+}/*顶层*/
+#left1{/*第二层左边*/
+    width: 20%;
+    height: 600px;
+    background-color: yellow;
+    float: left;
+    position: relative;
+}
+
+#center1{/*第二层中间*/
+    width: 60%;
+    height: 600px;
+    float: left;
+    position: relative;
+    background-color: brown;
+
+
+}
+#right1{/*第二层右边*/
+    width: 20%;
+    height: 600px;
+    float: left;
+    position: relative;
+    background-color: blue;
+}
+#tail{/*底层*/
+    width: 100%;
+    float: left;
+    position: relative;
+    height: 30px;
+    background-color: #3fff28;
+}
+#center1form{/*第二层表单部分*/
+    margin-top: 13%;
+
+    margin-left: 8%;
+   background-image: url("/static/img/apic7981.jpg");
+    height: 386px;
+    width: 650px;
+}
+#center1form1{/*第二层表单部分用户名*/
+    width: 50%;
+    height: 30px;
+    margin-top: 20%;
+    float: left;
+    position: absolute;
+      background-color: aqua;
+}
+#center1form2/*第二层表单部分密码*/
+{
+    width: 50%;
+    height: 30px;
+    margin-top: 25%;
+    float: left;
+    position: absolute;
+     background-color: aqua;
+
+}
+#center1form3{/*第二层表单部分案件*/
+    width:50% ;
+    height: 30px;
+    margin-top: 30%;
+    float: left;
+    position: absolute;
+     background-color: aqua;
+}
+#submintleft{/*第二层表单部分注册*/
+    width: 10%;
+    height: 20px;
+    float: left;
+
+
+
+}
+#submintright/*第二层表单部分登入*/
+{
+    width: 10%;
+    height: 20px;
+    float: right;
+
+}
+#center1form1head{
+    float: left;
+    width: 15%;
+    height: 30px;
+
+    background-color: red;
+}
+
+
+#input
+{
+    height: 26px;
+    width: 70%;
+    background-color: blue;
+}
+
+
+#submint
+{
+    height: 28px;
+    width: 100%;
+    background-color: blue;
+}

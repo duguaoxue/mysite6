@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>注册</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/regist.css' %}">
+</head>
+<body>
+<div id="head"><h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;欢迎注册，请填写注册信息</h3></div><!--顶层-->
+<div id="left1">left</div><!--第二层左边-->
+<div id="center1"><!--第二层中间层表格区-->
+    <div id="center1form">
+     <form method = 'post' enctype="multipart/form-data">
+        {% csrf_token %}
+
+         <div id="center1form1">
+             <div id="center1formhead">用户名</div>
+            <div> <input type="text" name="username" id="input"></div>
+         </div>
+         <div id="center1form2">
+             <div id="center1formhead"> 密码</div>
+             <div><input type="password" name="password" id="input"></div>
+         </div>
+         <div id="center1form3">
+             <div id="submintright"><input type="submit" value = "注册" id="submint"></div>
+         </div>
+
+
+
+     </form>
+
+    </div>
+</div>
+
+<div id="right1">right1</div>
+<div id="tail">tail</div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title> 欢迎登入</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/login.css' %}">
+</head>
+<body>
+<div id="head" align="center"><h2>欢迎登入</h2></div><!--顶层-->
+<div id="left1">left</div><!--第二层左边-->
+<div id="center1"><!--第二层中间-->
+<div id="center1form">
+<form method="post" enctype="multipart/form-data" action="/login/">
+    {% csrf_token %}
+    <div id="center1form1" >
+        <div id="center1form1head">用户名</div>
+        <input type="text" name="username" value="{{ username }}" id="input"></div>
+    <div id="center1form2">
+        <div id="center1form1head">密&nbsp码</div>
+        <input type="password" name="password" value="{{ password }}" id="input"></div>
+    <div id="center1form3">
+    <span id="submintleft"><input type="submit" value="注册" formaction="/regist/" formmethod="get" id="submint"></span>
+    <span id="submintright"><input type="submit" value="登入" id="submint"></span>
+    </div>
+</form>
+
+</div>
+</div>
+<div id="right1">right1</div>
+<div id="tail">tail</div>
+
+</body>
+</html>

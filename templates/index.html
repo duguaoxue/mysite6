@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>欢迎{{ username }}</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+</head>
+<body>
+<div id="head"><!--顶层-->
+     <div id="login">
+         <a href="/#/" >账户</a>
+     </div>
+     <div id="serarch">
+        <form method='get' enctype="multipart/form-data">
+          {% csrf_token %}
+         <input type="search" value="titile" name="titile" >
+            <input type="submit" value="搜索">
+        </form>
+     </div>
+    <div id="headright"><!--退出-->
+         <a href='/logout/'>退出</a>
+     </div>
+</div>
+<div id="left1" ><!--左边第一层-->
+    <div id="left11"><a href="#"><h1>操作系统</h1></a> </div>
+     <div id="left11"><a href="#"><h1>网络</h1></a></div>
+     <div id="left11"><a href="#"><h1>多媒体</h1></a></div>
+     <div id="left11"><a href="#"><h1>数据结构</h1></a></div>
+     <div id="left11"><a href="#"><h1>算法</h1></a></div>
+    <div id="left11"><a href="#"><h1>数据库</h1></a></div>
+    <div id="left11"><a href="#"><h1>编程语言</h1></a></div>
+     <div id="left11"><a href="#"><h1>服务器</h1></a></div>
+    <div id="left11"><a href="#"><h1>云</h1></a></div>
+    <div id="left11"><a href="#"><h1>大数据</h1></a></div>
+
+
+
+
+</div>
+<div id="center1">
+    {%for user in User %}
+    {{ user }}
+
+    {% endfor %}
+
+</div>
+<div id="right1">
+    <ul id="right1head">
+        <li id="right1head1">
+            <samp><a href="http://devdocs.io/" >api文档</a> </samp>
+        </li>
+        <li id="right1head1">
+            <samp><a href="http://microjs.com/">前端工具</a> </samp>
+        </li>
+        <li id="right1head1">
+            <samp><a href="http://www.w3cschool.cc/">w3c</a> </samp>
+        </li>
+        <li id="right1head1">
+            <samp><a href="http://www.lagou.com/" >拉勾网</a> </samp>
+        </li>
+        <li id="right1head1">
+            <samp><a href="http://guides.ruby-china.org/">Ruby on Rails指南</a></a> </samp>
+        </li>
+        <li id="right1head1">
+            <samp><a href="http://www.myeclipseide.cn/linux.html">myeclipse</a></samp>
+        </li>
+        <li id="right1head1">
+            <samp><a href="http://www.eclipse.org/downloads/">eclipse</a> </samp>
+        </li>
+        <li id="right1head1">
+            <samp><a href="https://ihower.tw/rails4/deployment.html">ruby on rails实战</a> </samp>
+        </li>
+        <li id="right1head1">
+            <samp><a href="http://tool.oschina.net/apidocs/">在线api</a> </samp>
+
+        </li>
+        <li id="right1head1">
+            <samp><a href="http://blog.csdn.net/">csdn</a> </samp>
+        </li>
+        <li id="right1head1">
+            <samp><a href="http://www.w3cschool.cc/w3cnote/30-best-websites-to-learn.html">学习设计与开发</a></samp>
+        </li>
+       <li id="right1head1">
+            <samp><a href="http://www.udpwork.com/">IT牛人博客聚合</a> </samp>
+        </li>
+        <li id="right1head1">
+            <samp> <a href="http://www.w3cfuns.com/">前端开发</a> </samp>
+        </li>
+        <li id="right1head1">
+            <samp><a href="http://www.w3cschool.cc/w3cnote/15-small-open-source-project.html">小型开源项目</a></samp>
+        </li>
+       <li id="right1head1">
+            <samp><a href="http://docs.30c.org/djangobook2/index.html" >Django Book2</a></samp>
+        </li>
+        <li id="right1head1">
+            <samp> <a href=" http://www.cnblogs.com/">博客园</a> </samp>
+        </li>
+        <li id="right1head1">
+            <samp> <a href="http://www.en8848.com.cn/words/fenlei/computer/">计算机英语</a></samp>
+        </li>
+        <li id="right1head1">
+            <samp> <a href="https://github.com/">github</a></samp>
+        </li>
+        <li id="right1head1">
+            <samp><a href="http://www.shiyanlou.com/">实验楼</a> </samp>
+        </li>
+        <li id="right1head1">
+            <samp> <a href="http://wear.techbrood.com/sdk/index.html">安卓开发</a> </samp>
+        </li>
+        <li id="right1head1">
+            <samp>  <a href="http://www.admin10000.com/">web开发者</a>  </samp>
+        </li>
+        <li id="right1head1">
+            <samp> <a href="http://www.51xuediannao.com/">懒人建站</a>  </samp>
+        </li>
+        <li id="right1head1">
+            <samp> <a href="http://segmentfault.com/">segmentfault</a></samp>
+        </li>
+    </ul>
+</div>
+<div id="tail">底部</div>
+</body>
+</html>
